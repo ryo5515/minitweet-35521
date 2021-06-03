@@ -21,6 +21,7 @@
 
 <div class="title">
   <% Article.all.each do |article| %>
+    <%= "#{article.user.account_name}(#{article.created_at.in_time_zone('Tokyo').strftime("%Y/%m/%d %H:%M:%S")})：" %>
     <%= article.tweet %>
     <br>
   <% end %>
