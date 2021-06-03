@@ -23,6 +23,7 @@
   <div class="title">
     <%= "#{article.user.account_name}(#{article.created_at.in_time_zone('Tokyo').strftime("%Y/%m/%d %H:%M:%S")})：" %>
     <%= article.tweet %>
+    <span style="color:blue">いいね！<%= article.likes.count %></span>
     <br>
   </div>
 <% end %>
