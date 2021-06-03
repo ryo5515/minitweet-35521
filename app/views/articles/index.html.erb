@@ -1,16 +1,19 @@
 <% if user_signed_in? %>
-  <%= "ようこそ、#{current_user.account_name}さん" %>
+  <h2><%= "ようこそ、#{current_user.account_name}さん" %></h2>
+  <%= link_to new_article_path do %>
+    <%= "ツイートを送信する" %>
+  <% end %>
+  <br>
+  <%= link_to user_path(current_user.id) do%>
+    <%= "マイページへ"%>
+  <% end %>
+  <br>
+  <br>
   <%= link_to destroy_user_session_path, method: "delete" do %>
     <%= "ログアウト" %>
   <% end %>
-  <br>
-  <%= link_to new_article_path do %>
-    <%= "ツイート作成ページへ" %>
-  <% end %>
 <% else %>
-  <%= "MiniTweetへようこそ" %>
-  <br>
-  <br>
+  <h2><%= "MiniTweetへようこそ" %></h2>
   <%= link_to new_user_registration_path do %>
     <%= "ユーザー登録ページへ" %>
   <% end %>
@@ -20,7 +23,7 @@
   <% end %>
 <% end %>
 <br><br>
-全てのユーザーのツイート
+<h3>全てのユーザーのツイート</h3>
 <% Article.all.each do |article| %>
   <% if user_signed_in? %>
     <div class="title">
@@ -41,7 +44,7 @@
 <% end %>
 <br>
 <% if user_signed_in? %>
-  あなたのツイート
+  <h3>あなたのツイート</h3>
   <% Article.all.each do |article| %>
     <% if Follow.find_by(following_id: article.user.id ,followed_by_id: current_user.id) != nil || article.user.id == current_user.id %>
       <div class="title">
@@ -54,7 +57,7 @@
     <% end %>
   <% end %>
   <br>
-  通知
+  <h3>通知</h3>
   <% Notification.where(notifying_id: current_user.id).each do |notification| %>
       <div class="title">
         <% if notification.article_id != nil %>
