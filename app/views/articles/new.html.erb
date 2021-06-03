@@ -1,6 +1,7 @@
+<h2>ツイートを送信しよう</h2>
 <%= form_with model: @article, url: articles_path do |f| %>
-  <%= f.text_field :tweet %>
+  <%= f.text_field :tweet, placeholder: "いまどうしてる？"%>
   <%= f.submit "ツイート送信"%>
 <% end %>
-
+<br>
 <%= link_to "トップページに戻る",root_path %>
