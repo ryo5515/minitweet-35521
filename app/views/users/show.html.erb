@@ -1,4 +1,4 @@
-<%= "#{@user.account_name}さんのマイページ"%><br>
+<h2><%= "#{@user.account_name}さんのマイページ"%></h2>
 account_id @<%= @user.account_id %><br>
 <%= @user.created_at.in_time_zone('Tokyo').strftime("%Y年%m月") %>からMiniTweetを利用しています<br>
 <%# <% if @user.id != current_user.id %> 
@@ -23,7 +23,7 @@ account_id @<%= @user.account_id %><br>
   <%# <% end %> 
 <%# </span> %>
 <br>
-投稿したツイート
+<h3>投稿したツイート</h3>
 <% Article.where(user_id: @user.id).each do |article| %>
   <div class="title">
     <%= "#{article.user.account_name}(#{article.created_at.in_time_zone('Tokyo').strftime("%Y/%m/%d %H:%M:%S")})：" %>
