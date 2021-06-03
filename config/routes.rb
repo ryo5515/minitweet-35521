@@ -6,9 +6,5 @@ Rails.application.routes.draw do
       get "create_like"
     end
   end
-  resources :users, only: :show do
-    member do
-      get "follow"
-    end
-  end
+  resources :users, only: :show
 end
