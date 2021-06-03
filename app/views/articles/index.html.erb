@@ -1,14 +1,15 @@
 <% if user_signed_in? %>
-  <%= "#{current_user.account_name}さんでログイン中" %>
-  <%= link_to new_article_path do %>
-    <%= "ツイート作成ページへ" %>
-  <% end %>
-  <br>
+  <%= "ようこそ、#{current_user.account_name}さん" %>
   <%= link_to destroy_user_session_path, method: "delete" do %>
     <%= "ログアウト" %>
   <% end %>
+  <br>
+  <%= link_to new_article_path do %>
+    <%= "ツイート作成ページへ" %>
+  <% end %>
 <% else %>
-  <%= "ログインしていません" %>
+  <%= "MiniTweetへようこそ" %>
+  <br>
   <br>
   <%= link_to new_user_registration_path do %>
     <%= "ユーザー登録ページへ" %>
@@ -19,7 +20,7 @@
   <% end %>
 <% end %>
 <br><br>
-全てのツイート
+全てのユーザーのツイート
 <% Article.all.each do |article| %>
   <% if user_signed_in? %>
     <div class="title">
@@ -40,7 +41,7 @@
 <% end %>
 <br>
 <% if user_signed_in? %>
-  タイムライン
+  あなたのツイート
   <% Article.all.each do |article| %>
     <% if Follow.find_by(following_id: article.user.id ,followed_by_id: current_user.id) != nil || article.user.id == current_user.id %>
       <div class="title">
