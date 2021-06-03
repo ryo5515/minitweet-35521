@@ -20,7 +20,7 @@
 <% end %>
 
 <% Article.all.each do |article| %>
-  <div class="title">
+  <div class="title" action="<%= create_like_article_path(article) %>">
     <%= "#{article.user.account_name}(#{article.created_at.in_time_zone('Tokyo').strftime("%Y/%m/%d %H:%M:%S")})：" %>
     <%= article.tweet %>
     <span style="color:blue">いいね！<%= article.likes.count %></span>
