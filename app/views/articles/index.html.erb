@@ -1,16 +1,27 @@
+<% if user_signed_in? %>
+  <%= "#{current_user.account_name}さんでログイン中" %>
+  <%= link_to new_article_path do %>
+    <%= "ツイート作成ページへ" %>
+  <% end %>
+  <br>
+  <%= link_to destroy_user_session_path, method: "delete" do %>
+    <%= "ログアウト" %>
+  <% end %>
+<% else %>
+  <%= "ログインしていません" %>
+  <br>
+  <%= link_to new_user_registration_path do %>
+    <%= "ユーザー登録ページへ" %>
+  <% end %>
+  <br>
+  <%= link_to new_user_session_path do %>
+    <%= "ログインページへ" %>
+  <% end %>
+<% end %>
+
 <div class="title">
   <% Article.all.each do |article| %>
     <%= article.tweet %>
     <br>
   <% end %>
 </div>
-
-<%= link_to new_article_path do %>
-  <%= "ツイート作成ページへ" %>
-<% end %>
-
-<br>
-
-<%= link_to new_user_registration_path do %>
-  <%= "ユーザー登録ページへ" %>
-<% end %>
