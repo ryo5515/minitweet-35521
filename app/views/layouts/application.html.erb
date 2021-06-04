@@ -12,6 +12,14 @@
   <body>
     <header class="header">
       <a href="/">MiniTweet</a>
+
+      <% if user_signed_in? %>
+        <%= link_to destroy_user_session_path, method: "delete" do %>
+        <div class="logout">
+          <%= "ログアウト" %>
+        </div>
+        <% end %>
+      <% end %>
     </header>
     <%= yield %>
     <footer class="footer">
