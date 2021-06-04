@@ -63,7 +63,7 @@
   <% Notification.where(notifying_id: current_user.id).order(created_at: "DESC").each do |notification| %>
       <div class="title">
         <% if notification.article_id != nil %>
-          <%= User.find(notification.notified_by_id).account_name %>さんがいいねしました！「<%= Article.find(notification.article_id).tweet %>」
+          <%= User.find(notification.notified_by_id).account_name %>さんが「<%= Article.find(notification.article_id).tweet %>」にいいねしました！
         <%# <% else %>
           <%# <%= User.find(notification.notified_by_id).account_nameさんがあなたをフォローしました %> 
         <% end %>
