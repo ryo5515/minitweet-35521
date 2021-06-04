@@ -3,7 +3,7 @@ class ArticlesController < ApplicationController
   before_action :set_article, only: :create_like
 
   def index
-    @article = "表示される内容が変わります"
+    @article = Article.new
   end
 
   def new
@@ -16,7 +16,7 @@ class ArticlesController < ApplicationController
       @article.save
       redirect_to root_path
     else
-      redirect_to new_article_path
+      # redirect_to new_article_path
     end
   end
 

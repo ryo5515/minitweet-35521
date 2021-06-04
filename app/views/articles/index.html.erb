@@ -1,8 +1,17 @@
 <% if user_signed_in? %>
   <h2><%= "ようこそ、#{current_user.account_name}さん" %></h2>
-    <%= link_to new_article_path do %>
-      <%= "ツイートを送信する" %>
+
+    <%= form_with model: @article, url: articles_path do |f| %>
+      <div class="tweet-box">
+        <div class="tweet-box-top">
+          <%= f.text_area :tweet, placeholder: "20文字以内でつぶやく"%>
+        </div>
+        <div class="tweet-box-bottom">
+          <%= f.submit "ツイートする"%>
+        </div>
+      </div>
     <% end %>
+    
   <br>
     <%= link_to user_path(current_user.id) do%>
       <%= "マイページへ"%>
