@@ -1,28 +1,30 @@
 <% if user_signed_in? %>
   <h1><%= "ようこそ、#{current_user.account_name}さん" %></h1>
-  <%= link_to new_article_path do %>
-    <%= "ツイートを送信する" %>
-  <% end %>
+    <%= link_to new_article_path do %>
+      <%= "ツイートを送信する" %>
+    <% end %>
   <br>
-  <%= link_to user_path(current_user.id) do%>
-    <%= "マイページへ"%>
-  <% end %>
+    <%= link_to user_path(current_user.id) do%>
+      <%= "マイページへ"%>
+    <% end %>
   <br>
   <br>
-  <%= link_to destroy_user_session_path, method: "delete" do %>
-    <%= "ログアウト" %>
-  <% end %>
-<% else %>
+    <%= link_to destroy_user_session_path, method: "delete" do %>
+      <%= "ログアウト" %>
+    <% end %>
+  <% else %>
   <h1><%= "MiniTweetへようこそ" %></h1>
-  <%= link_to new_user_registration_path do %>
-    <%= "ユーザー登録ページへ" %>
-  <% end %>
+    <%= link_to new_user_registration_path do %>
+      <%= "ユーザー登録ページへ" %>
+    <% end %>
   <br>
-  <%= link_to new_user_session_path do %>
-    <%= "ログインページへ" %>
-  <% end %>
+    <%= link_to new_user_session_path do %>
+      <%= "ログインページへ" %>
+    <% end %>
 <% end %>
-<br><br>
+
+<br>
+<br>
 <h3>全てのユーザーのツイート</h3>
 <% Article.all.each do |article| %>
   <% if user_signed_in? %>
@@ -43,6 +45,7 @@
   <% end %>
 <% end %>
 <br>
+
 <% if user_signed_in? %>
   <h3>あなたのツイート</h3>
   <% Article.all.each do |article| %>
