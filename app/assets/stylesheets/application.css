@@ -15,7 +15,7 @@
  */
 
 .title{
-  color: red;
+  color: #000000;
 }
 
 .active{
@@ -23,13 +23,36 @@
 }
 
 .header{
-  background-color: green;
-  height: 30px;
+  background-color: #009bc6;
+  height: 40px;
+  font-size: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
 .footer{
-  background-color: green;
+  background-color: #009bc6;
   color: white;
   height: 30px;
   text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h3 {
+color: black;
+padding: 0.5em 0;
+border-top: solid 3px #ff006f;
+border-bottom: solid 3px #ff006f;
+}
+
+.logout{
+  font-size: 20px;
 }
