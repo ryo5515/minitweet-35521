@@ -21,6 +21,8 @@
   <h1><%= "MiniTweetへようこそ" %></h1>
   一言つぶやけるアプリです
   <br>
+  現時点ではGoogle Chromeでの使用を想定しています
+  <br>
   <br>
     <%= link_to new_user_registration_path do %>
       <%= "ユーザー登録ページへ" %>
@@ -61,7 +63,7 @@
   <% Notification.where(notifying_id: current_user.id).order(created_at: "DESC").each do |notification| %>
       <div class="title">
         <% if notification.article_id != nil %>
-          <%= User.find(notification.notified_by_id).account_name %>さんがあなたのツイートにいいねしました:<%= Article.find(notification.article_id).tweet %>
+          <%= User.find(notification.notified_by_id).account_name %>さんがいいねしました！「<%= Article.find(notification.article_id).tweet %>」
         <%# <% else %>
           <%# <%= User.find(notification.notified_by_id).account_nameさんがあなたをフォローしました %> 
         <% end %>
