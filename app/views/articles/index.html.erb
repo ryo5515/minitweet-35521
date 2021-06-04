@@ -1,5 +1,5 @@
 <% if user_signed_in? %>
-  <h2><%= "ようこそ、#{current_user.account_name}さん" %></h2>
+  <h1><%= "ようこそ、#{current_user.account_name}さん" %></h1>
   <%= link_to new_article_path do %>
     <%= "ツイートを送信する" %>
   <% end %>
@@ -13,7 +13,7 @@
     <%= "ログアウト" %>
   <% end %>
 <% else %>
-  <h2><%= "MiniTweetへようこそ" %></h2>
+  <h1><%= "MiniTweetへようこそ" %></h1>
   <%= link_to new_user_registration_path do %>
     <%= "ユーザー登録ページへ" %>
   <% end %>
