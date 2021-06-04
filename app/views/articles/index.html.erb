@@ -4,10 +4,10 @@
     <%= form_with model: @article, url: articles_path do |f| %>
       <div class="tweet-box">
         <div class="tweet-box-top">
-          <%= f.text_area :tweet, placeholder: "20文字以内でつぶやく"%>
+          <%= f.text_area :tweet, placeholder: "30文字以内でつぶやく", class: 'tweet'%>
         </div>
         <div class="tweet-box-bottom">
-          <%= f.submit "ツイートする"%>
+          <%= f.submit "ツイートする", class: 'button'%>
         </div>
       </div>
     <% end %>
