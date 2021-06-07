@@ -50,7 +50,8 @@ Basic認証
 
 ## いいね機能
 [![Image from Gyazo](https://i.gyazo.com/3edaaa20f61df3a10c25e713b98e3e89.gif)](https://gyazo.com/3edaaa20f61df3a10c25e713b98e3e89)
-自分以外のユーザーのツイートに対していいねをつけることが出来ます。ついたいいねはカウントされ再度クリックすることで取り消しする事も可能にしました。<br><br>
+自分以外のユーザーのツイートに対していいねをつけることが出来ます。<br>
+ついたいいねはカウントされ再度クリックすることで取り消しする事も可能にしました。<br><br>
 
 ## マイページ機能
 [![Image from Gyazo](https://i.gyazo.com/caeaf141f66075bd279863a07c07ff4d.png)](https://gyazo.com/caeaf141f66075bd279863a07c07ff4d)
