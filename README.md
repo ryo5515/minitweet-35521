@@ -49,7 +49,7 @@ Basic認証
 ツイートの投稿にはAjaxを用いて実装し、ストレスなく表示出来るようにしました。<br><br>
 
 ## いいね機能
-[![Image from Gyazo](https://i.gyazo.com/3edaaa20f61df3a10c25e713b98e3e89.gif)](https://gyazo.com/3edaaa20f61df3a10c25e713b98e3e89)
+[![Image from Gyazo](https://i.gyazo.com/f77f787cc0da1e24bf45ee2ca521419e.gif)](https://gyazo.com/f77f787cc0da1e24bf45ee2ca521419e)
 自分以外のユーザーのツイートに対していいねをつけることが出来ます。<br>
 ついたいいねはカウントされ再度クリックすることで取り消しする事も可能にしました。<br><br>
 
