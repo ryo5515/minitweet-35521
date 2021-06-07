@@ -89,11 +89,10 @@ VSCode<br><br>
 
 | Column             | Type   | Options     |
 | ------------------ | ------ | ----------- |
-| name               | string | null: false |
-| email              | string | null: false |
-| encrypted_password | string | null: false |
 | account_id         | string | null: false |
 | account_name       | string | null: false |
+| password           | string | null: false |
+| encrypted_password | string | null: false |
 
 <br>
 
