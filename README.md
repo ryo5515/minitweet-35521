@@ -66,25 +66,15 @@ Basic認証
 favicon.cc を使用し作成致しました。
 <br><br>
 
-# 使用技術(開発環境)
-## バックエンド
-Ruby,Ruby on Rails<br>
-## フロントエンド
-HTML,CSS,JavaScript,JQuery,Ajax<br>
-## データベース
-MySQL<br>
-## ソース管理
-GitHub,GitHubDesktop<br>
-## テスト
-RSpec<br>
-## エディタ
-VSCode<br><br>
 
 # 課題や今後実装したい機能
 * ユーザーをフォローしフォローしたユーザーのツイートのみを表示する機能
 * マイページに画像の設定を行い、ユーザーごとのオリジナリティを出せる機能
 <br><br>
 # DB設計
+## ER図
+[![Image from Gyazo](https://i.gyazo.com/45977f23206d358ef0a2c01da724ff10.png)](https://gyazo.com/45977f23206d358ef0a2c01da724ff10)
+
 ## usersテーブル<br>
 
 | Column             | Type   | Options     |
@@ -141,3 +131,24 @@ VSCode<br><br>
 ### Association
 - belongs_to :user 
 - belongs_to :article
+<br><br>
+
+# ローカルでの動作方法
+```
+% git clone https://github.com/ryo5515/minitweet-35521.git  
+% cd minitweet-35521
+% bundle install
+% rails db:create
+% rails db:migrate
+$ rails s
+　→　http://localhost:3000
+```
+<br>
+
+# 使用技術(開発環境)
+* フロントエンド: HTML,CSS,JavaScript,JQuery,Ajax
+* バックエンド: Ruby,Ruby on Rails
+* データベース: MySQL
+* ソース管理: GitHub,GitHubDesktop
+* テスト: RSpec
+* エディタ :VSCode<br><br>
