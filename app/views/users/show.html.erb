@@ -1,5 +1,5 @@
 <h2><%= "#{@user.account_name}さんのマイページ"%></h2>
-account_id @<%= @user.account_id %><br>
+アカウント_id @<%= @user.account_id %><br>
 <%= @user.created_at.in_time_zone('Tokyo').strftime("%Y年%m月") %>からMiniTweetを利用しています<br>
 <%# <% if @user.id != current_user.id %> 
   <%# <div id="follow" action="<%= follow_user_path(@user.id)"> %>
