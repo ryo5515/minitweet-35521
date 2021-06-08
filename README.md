@@ -32,11 +32,11 @@ Basic認証
 画面上部のヘッダーにはトップページのリンクを貼り、下部のフッターにはCopyrightを表示してみるようにしました。<br><br>
 
 ## ユーザー登録画面
-[![Image from Gyazo](https://i.gyazo.com/010a8280cfe1b1b775b860e3c18c7f86.png)](https://gyazo.com/010a8280cfe1b1b775b860e3c18c7f86)
+[![Image from Gyazo](https://i.gyazo.com/4ff29ee848977944ab86eca2a5089f0a.png)](https://gyazo.com/4ff29ee848977944ab86eca2a5089f0a)
 新規登録画面です。<br><br>
 
 ## ログイン画面
-[![Image from Gyazo](https://i.gyazo.com/e6c72ee10aef16d7c79a004f829b240d.png)](https://gyazo.com/e6c72ee10aef16d7c79a004f829b240d)
+[![Image from Gyazo](https://i.gyazo.com/63e41f014565fade91199a1270e54784.png)](https://gyazo.com/63e41f014565fade91199a1270e54784)
 ログイン画面です。<br><br>
 
 ## ログイン後のトップページ
@@ -54,7 +54,7 @@ Basic認証
 ついたいいねはカウントされ再度クリックすることで取り消しする事も可能にしました。<br><br>
 
 ## マイページ機能
-[![Image from Gyazo](https://i.gyazo.com/caeaf141f66075bd279863a07c07ff4d.png)](https://gyazo.com/caeaf141f66075bd279863a07c07ff4d)
+[![Image from Gyazo](https://i.gyazo.com/3a92df1bfd2d1e43aed8b6b7084c6623.png)](https://gyazo.com/3a92df1bfd2d1e43aed8b6b7084c6623)
 トップページのマイページへのボタンか、投稿したツイートのユーザー名をクリックすることでそのユーザーのマイページに遷移することが出来ます。<br>
 マイページでは登録時に設定したアカウントidの確認と登録日の確認が出来ます。<br>
 また、ページのユーザーが今までに投稿した全てのツイートの確認も可能です。<br><br>
