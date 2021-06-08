@@ -36,7 +36,7 @@ Basic認証
 新規登録画面です。<br><br>
 
 ## ログイン画面
-[![Image from Gyazo](https://i.gyazo.com/63e41f014565fade91199a1270e54784.png)](https://gyazo.com/63e41f014565fade91199a1270e54784)
+[![Image from Gyazo](https://i.gyazo.com/53e8b2b9e1b0839179d52a020f36c30b.png)](https://gyazo.com/53e8b2b9e1b0839179d52a020f36c30b)
 ログイン画面です。<br><br>
 
 ## ログイン後のトップページ
