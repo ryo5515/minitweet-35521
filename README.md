@@ -46,7 +46,7 @@ Basic認証
 
 ## ツイートの投稿
 [![Image from Gyazo](https://i.gyazo.com/d4e3fac94b82fa4048f80e54f3d581b1.gif)](https://gyazo.com/d4e3fac94b82fa4048f80e54f3d581b1)
-ツイートの投稿にはAjaxを用いて実装し、ストレスなく表示出来るようにしました。<br><br>
+ツイートの投稿にはAjaxを用いて実装し、読み込みなく表示出来るようにしました。<br><br>
 
 ## いいね機能
 [![Image from Gyazo](https://i.gyazo.com/f77f787cc0da1e24bf45ee2ca521419e.gif)](https://gyazo.com/f77f787cc0da1e24bf45ee2ca521419e)
