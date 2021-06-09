@@ -86,7 +86,7 @@ favicon.cc を使用し作成致しました。
 <br><br>
 # DB設計
 ## ER図
-[![Image from Gyazo](https://i.gyazo.com/45977f23206d358ef0a2c01da724ff10.png)](https://gyazo.com/45977f23206d358ef0a2c01da724ff10)
+[![Image from Gyazo](https://i.gyazo.com/470cd4337832e677b5f046a96b6a135b.png)](https://gyazo.com/470cd4337832e677b5f046a96b6a135b)
 
 ## usersテーブル<br>
 
