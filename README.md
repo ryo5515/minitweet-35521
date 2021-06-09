@@ -44,7 +44,7 @@ Basic認証
 画面上部のヘッダーにはトップページのリンクを貼り、下部のフッターにはCopyrightを表示してみるようにしました。<br><br>
 
 ## ユーザー登録画面
-[![Image from Gyazo](https://i.gyazo.com/e8ac9f67db82d33d607628cef557a4fe.png)](https://gyazo.com/e8ac9f67db82d33d607628cef557a4fe)
+[![Image from Gyazo](https://i.gyazo.com/7556012288c79af36f7bfc0d684913f4.png)](https://gyazo.com/7556012288c79af36f7bfc0d684913f4)
 新規登録画面です。<br><br>
 
 ## ログイン画面
