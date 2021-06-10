@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  before_action :set_user, only: [:show, :follow]
+  before_action :set_user, only: [:show]
 
   # def follow
   #   if user_signed_in? && @user.id != current_user.id && Follow.find_by(following_id: @user.id) == nil
