@@ -52,21 +52,21 @@ Basic認証
 ログイン画面です。<br><br>
 
 ## ログイン後のトップページ
-[![Image from Gyazo](https://i.gyazo.com/ef274a1cc3490d08e4b51c3fcde054f5.png)](https://gyazo.com/ef274a1cc3490d08e4b51c3fcde054f5)
+[![Image from Gyazo](https://i.gyazo.com/987094b8a2c0ec220f19779476c029cb.png)](https://gyazo.com/987094b8a2c0ec220f19779476c029cb)
 ログイン後にはヘッダーにログアウトボタンを表示するようにしました。<br>
 この画面よりツイートの投稿、すべてのユーザーのツイートの確認、他ユーザーのツイートへのいいね機能、自分のツイートがいいねされた際の通知を確認することが出来ます。<br><br>
 
 ## ツイートの投稿
-[![Image from Gyazo](https://i.gyazo.com/d4e3fac94b82fa4048f80e54f3d581b1.gif)](https://gyazo.com/d4e3fac94b82fa4048f80e54f3d581b1)
+[![Image from Gyazo](https://i.gyazo.com/ac36ad5c01800a7d4bd08d6927978195.gif)](https://gyazo.com/ac36ad5c01800a7d4bd08d6927978195)
 ツイートの投稿にはAjaxを用いて実装し、読み込みなく表示出来るようにしました。<br><br>
 
 ## いいね機能
-[![Image from Gyazo](https://i.gyazo.com/f77f787cc0da1e24bf45ee2ca521419e.gif)](https://gyazo.com/f77f787cc0da1e24bf45ee2ca521419e)
+[![Image from Gyazo](https://i.gyazo.com/ee3feada75bf6b947a1c860fd81a4451.gif)](https://gyazo.com/ee3feada75bf6b947a1c860fd81a4451)
 自分以外のユーザーのツイートに対していいねをつけることが出来ます。<br>
 ついたいいねはカウントされ再度クリックすることで取り消しする事も可能にしました。<br><br>
 
 ## マイページ機能
-[![Image from Gyazo](https://i.gyazo.com/3a92df1bfd2d1e43aed8b6b7084c6623.png)](https://gyazo.com/3a92df1bfd2d1e43aed8b6b7084c6623)
+[![Image from Gyazo](https://i.gyazo.com/eee8904c5433cd174e3a78ea26aab470.png)](https://gyazo.com/eee8904c5433cd174e3a78ea26aab470)
 トップページのマイページへのボタンか、投稿したツイートのユーザー名をクリックすることでそのユーザーのマイページに遷移することが出来ます。<br>
 マイページでは登録時に設定したアカウントidの確認と登録日の確認が出来ます。<br>
 また、ページのユーザーが今までに投稿した全てのツイートの確認も可能です。<br><br>
