@@ -20,7 +20,7 @@ Basic認証
 * メールアドレス test@test.com
 * パスワード 111aaa  
 <br>
-* 2021/6/14現在ではGoogle Chromeでの使用を想定しております。
+* 2021/6/20現在ではGoogle Chromeでの使用を想定しております。
 <br><br>
 
 # 制作背景（意図）
